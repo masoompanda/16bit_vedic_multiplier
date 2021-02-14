@@ -1,0 +1,33 @@
+module test_vedic_32x32;
+reg [31:0] a; //input
+reg [31:0] b; //input
+wire [63:0] c; //output
+
+vedic_32x32 dut (a,b,c);
+
+initial begin
+		a = 0;
+		b = 0;
+		#100;
+		
+		a = 32'd45;
+		b = 32'd63;
+		#100;
+		
+		a = 32'd21;
+		b = 32'd13;
+		#100;
+		
+		a = 32'd25;
+		b = 32'd25;
+		#100;
+		
+		a = 32'd201;
+		b = 32'd211;
+		#100;
+		
+		a = 32'd312;
+		b = 32'd445;
+		#100;
+
+	end
