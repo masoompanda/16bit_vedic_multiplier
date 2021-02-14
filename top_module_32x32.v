@@ -1,5 +1,6 @@
 `timescale 1ns / 1ps
 
+//this is the top module//
 module vedic_32x32(a,b,c);
 input [31:0]a;
 input [31:0]b;
